@@ -1,8 +1,16 @@
-﻿
-// Создадим туже программу, но с рандомом
+﻿Console.WriteLine("Попытайтесь угадать число от 3 до 7");
+Console.WriteLine("Введите предположительное число ");
+string number = Console.ReadLine();
 
-int numberA = new Random().Next(1,15);
-int numberB = new Random().Next(1,5);
-Console.WriteLine (numberA);
-Console.WriteLine (numberB);
-Console.WriteLine(numberA+numberB);
+if (number == "6")
+{
+    Console.WriteLine ("Вы угадали!");
+
+}
+else 
+{
+Console.WriteLine ("Увы, вы не угадали");
+Console.WriteLine ("Верное число 6");
+
+}
+
