@@ -6,14 +6,12 @@ int number1 = Convert.ToInt32(num1);
 Console.WriteLine ("Введите второе число");
 string num2 = Console.ReadLine();
 int number2 = Convert.ToInt32(num2);
-if ( number1 < number2)
-{
-    Console.WriteLine("Число " + number1 + " меньше числа " + number2);
-}
-else
-{
-    Console.WriteLine ("Число " + number1 + " больше числа " + number2);
-}
+Console.WriteLine("Введите третье число");
+string num3 = Console.ReadLine();
+int number3 = Convert.ToInt32(num3);
+int numbers = new int {number1, number2, number3};
+
+
 
 
 
