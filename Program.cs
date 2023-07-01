@@ -1,13 +1,35 @@
-﻿// Напишите программу, которая на вход принимает число и выдаёт, является ли число чётным (делится ли оно на два без остатка).
-Console.WriteLine ("Введите число ");
-string number = Console.ReadLine ();
-int num = Convert.ToInt32(number);
- if (num % 2 == 0)
+﻿// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
 
+int ReadInt (string messerge)
 {
-    Console.WriteLine ("Число " + num + " четное");
+    Console.Write ( messerge);
+    string InputedStr  = Console.ReadLine ();
+    int number = Convert. ToInt32 (InputedStr);
+    return number;
 }
-else 
+bool IsWeekend (int weekDay)
 {
-    Console.WriteLine ("Число " + num + " нечетное");
+    if (weekDay > 5)
+    {
+        return true;
+    }
+    return false;
+}
+bool Weekday (int number)
+{
+    if (number > 0 && number <=5 )
+    {
+        return true;
+    }
+    Console.WriteLine ("Нет такого дня!");
+    return false;
+}
+int weekDay = ReadInt("Введите день недели");
+if (Weekday (weekDay))
+{
+    Console.WriteLine ("Выходной");
+}
+else
+{
+    System.Console.WriteLine("Будний день");
 }
